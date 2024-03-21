@@ -1,6 +1,5 @@
 import React, { useState } from "react";
-import { Col, Container, Form, Row } from "react-bootstrap";
-
+import { Col, Container, Form, Image, Row } from "react-bootstrap";
 const Section = () => {
   const formInitialDetails = {
     firstName: "",
@@ -20,8 +19,21 @@ const Section = () => {
   const [formDetails, setFormDetails] = useState(formInitialDetails);
   return (
     <Container>
-      <Row>
-        <Col>df</Col>
+      <Row className="py-5">
+        <Col className="py-3">
+          <h3 className="display-6 pb-3">Let’s work together</h3>
+          <p className="lead pb-2">
+            Hi there, I'm eager to connect and explore how we can work together
+            to bring your ideas to life. Feel free to contact me using the form,
+            and let's start the conversation.
+          </p>
+          <div>
+            <Image src="/whatsapp.svg" alt="whatsapp" />
+            <Image src="/linkedin.svg" alt="linkedin" />
+            <Image src="/github.svg" alt="github" />
+            <Image src="/facebook.svg" alt="facebook" />
+          </div>
+        </Col>
         <Col>
           <Form onSubmit={handleSubmit} className="py-3">
             <Form.Control
