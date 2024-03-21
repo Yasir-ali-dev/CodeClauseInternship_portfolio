@@ -4,6 +4,8 @@ import HeroSection from "./components/HeroSection";
 import NavBar from "./components/NavBar";
 import Skills from "./components/Skills";
 import Section from "./components/Section";
+import Techs from "./components/Techs";
+import About from "./components/About";
 
 function App() {
   return (
@@ -12,6 +14,8 @@ function App() {
       <HeroSection />
       <Skills />
       <Section />
+      {/* <Techs /> */}
+      <About />
     </div>
   );
 }
