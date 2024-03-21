@@ -3,6 +3,7 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import HeroSection from "./components/HeroSection";
 import NavBar from "./components/NavBar";
 import Skills from "./components/Skills";
+import Section from "./components/Section";
 
 function App() {
   return (
@@ -10,6 +11,7 @@ function App() {
       <NavBar />
       <HeroSection />
       <Skills />
+      <Section />
     </div>
   );
 }

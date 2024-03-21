@@ -1,5 +1,6 @@
-import React, { useEffect, useState } from "react";
-import { Carousel, Col, Container, Image, Row } from "react-bootstrap";
+import React from "react";
+import { Col, Container, Image, Row } from "react-bootstrap";
+import { motion } from "framer-motion";
 const tech = [
   "/R.svg",
   "/node-js.svg",
@@ -12,39 +13,35 @@ const tech = [
 ];
 
 const Skills = () => {
-  const [startIndex, setStartIndex] = useState(0);
-
-  useEffect(() => {
-    const intervalId = setInterval(() => {
-      setStartIndex((prevIndex) => (prevIndex + 1) % tech.length);
-    }, 5500); // Change image every 5 seconds
-
-    return () => clearInterval(intervalId);
-  }, [tech.length]);
-
-  const getImagesToDisplay = () => {
-    return [
-      ...tech.slice(startIndex, tech.length),
-      ...tech.slice(0, startIndex),
-    ].slice(0, tech.length);
-  };
-
   return (
     <Container>
-      <Row>
+      <Row className="py-1">
         <Col>
+          <hr />
           <div className="d-flex justify-content-center align-items-center gap-5">
-            {getImagesToDisplay().map((src, index) => (
-              <Image
+            {tech.map((src, index) => (
+              <motion.div
                 key={index}
-                className="d-block"
-                width={"120px"}
-                style={{ objectFit: "cover" }}
-                src={src}
-                alt={`tech-image-${index}`}
-              />
+                whileHover={{
+                  scale: 1.2, // Scale up on hover
+                  rotate: 360, // Rotate 360 degrees on hover
+                  borderRadius: "50%",
+                }}
+                transition={{ duration: 0.4 }} // Duration of the hover animation
+              >
+                <Image
+                  key={index}
+                  className="d-block"
+                  width="77px"
+                  style={{ objectFit: "cover" }}
+                  src={src}
+                  alt={`tech-image-${index}`}
+                  fluid
+                />
+              </motion.div>
             ))}
           </div>
+          <hr />
         </Col>
       </Row>
     </Container>

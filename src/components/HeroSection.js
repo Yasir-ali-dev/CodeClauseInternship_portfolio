@@ -1,5 +1,5 @@
 import React from "react";
-import { Button, Col, Container, Row } from "react-bootstrap";
+import { Button, Col, Container, Image, Row } from "react-bootstrap";
 
 const HeroSection = () => {
   return (
@@ -17,12 +17,8 @@ const HeroSection = () => {
             <img src="/whatsapp.png" alt="" srcset="" width={"45px"} />
           </div>
         </Col>
-        <Col md={6} className="text-center">
-          <img
-            src="path-to-your-image.jpg"
-            alt="UI & UX Designer"
-            className="img-fluid"
-          />
+        <Col md={6} className="p-5">
+          <Image src="/mine.png" alt="UI & UX Designer" fluid />
         </Col>
       </Row>
     </Container>
