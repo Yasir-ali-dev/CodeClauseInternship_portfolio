@@ -3,7 +3,7 @@ import { Button, Col, Container, Image, Row } from "react-bootstrap";
 
 const HeroSection = () => {
   return (
-    <Container className="hero-section" fluid>
+    <Container className="hero-section">
       <Row className="align-items-center">
         <Col xs={12} md={8} lg={6} className="mx-auto text-center">
           <h1 className="display-4">Hello I'M A UI & UX Designer.</h1>

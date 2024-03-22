@@ -6,6 +6,7 @@ import Skills from "./components/Skills";
 import Section from "./components/Section";
 import Techs from "./components/Techs";
 import About from "./components/About";
+import Services from "./components/Services";
 
 function App() {
   return (
@@ -14,8 +15,10 @@ function App() {
       <HeroSection />
       <Skills />
       <Section />
-      {/* <Techs /> */}
+
       <About />
+
+      <Services />
     </div>
   );
 }
