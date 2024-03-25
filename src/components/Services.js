@@ -10,7 +10,7 @@ const Services = () => {
       </Row>
       <div className="d-flex justify-content-center gap-3 py-2 align-items-center">
         <motion.div
-          className="d-flex flex-column px-3 py-3"
+          className="d-flex flex-column py-4 px-3"
           style={{
             border: "none",
             backgroundImage:
@@ -35,7 +35,7 @@ const Services = () => {
           </div>
         </motion.div>
         <motion.div
-          className="d-flex flex-column px-3 py-3"
+          className="d-flex flex-column py-4 px-3"
           style={{
             border: "none",
             backgroundImage:
@@ -62,7 +62,7 @@ const Services = () => {
       </div>
       <div className="d-flex justify-content-center gap-3 py-2 align-items-center">
         <motion.div
-          className="d-flex flex-column px-3 py-3"
+          className="d-flex flex-column py-4 px-3"
           style={{
             border: "none",
             backgroundImage:
@@ -87,7 +87,7 @@ const Services = () => {
           </div>
         </motion.div>
         <motion.div
-          className="d-flex flex-column px-3 py-3"
+          className="d-flex flex-column py-4 px-3"
           style={{
             border: "none",
             backgroundImage:

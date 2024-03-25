@@ -6,7 +6,7 @@ const About = () => {
   const divVariants = {
     hover: {
       scale: 1.1,
-      backgroundColor: "#A6E3E9",
+      backgroundColor: "#E3FDFD",
       transition: { duration: 0.3 },
     },
   };

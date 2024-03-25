@@ -7,6 +7,8 @@ import Section from "./components/Section";
 import Techs from "./components/Techs";
 import About from "./components/About";
 import Services from "./components/Services";
+import Projects from "./components/Projects";
+import Footer from "./components/Footer";
 
 function App() {
   return (
@@ -14,11 +16,11 @@ function App() {
       <NavBar />
       <HeroSection />
       <Skills />
-      <Section />
-
       <About />
-
       <Services />
+      <Projects />
+      <Section />
+      <Footer />
     </div>
   );
 }
