@@ -4,12 +4,11 @@ import HeroSection from "./components/HeroSection";
 import NavBar from "./components/NavBar";
 import Skills from "./components/Skills";
 import Section from "./components/Section";
-import Techs from "./components/Techs";
 import About from "./components/About";
 import Services from "./components/Services";
 import Projects from "./components/Projects";
 import Footer from "./components/Footer";
-
+import "./index.css";
 function App() {
   return (
     <div>

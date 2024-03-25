@@ -18,7 +18,7 @@ const Skills = () => {
       <Row className="py-1">
         <Col>
           <hr />
-          <div className="d-flex justify-content-center align-items-center gap-5">
+          <div className="d-flex justify-content-center align-items-center flex-wrap gap-3 gap-md-5">
             {tech.map((src, index) => (
               <motion.div
                 key={index}
@@ -28,10 +28,11 @@ const Skills = () => {
                   borderRadius: "50%",
                 }}
                 transition={{ duration: 0.4 }} // Duration of the hover animation
+                className="text-center"
               >
                 <Image
                   key={index}
-                  className="d-block"
+                  className="d-block mx-auto"
                   width="77px"
                   style={{ objectFit: "cover" }}
                   src={src}
