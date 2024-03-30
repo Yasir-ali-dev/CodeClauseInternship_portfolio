@@ -2,6 +2,7 @@ import React from 'react'
 import { Button, Col, Container, Image, Row } from 'react-bootstrap'
 import {motion} from "framer-motion"
 import {icons} from "../assets/icons"
+import "./index.css"
 const About = () => {
   const divVariants = {
     hover: {
@@ -11,8 +12,8 @@ const About = () => {
     },
   };
   return (
-    <Container className="py-3">
-    <h3 className="display-6 text-center mb-3">About Me</h3>
+  <Container className="py-3 about" id='about'>
+    <h3 className="display-6 text-center mb-3 py-1">About Me</h3>
     <Row className="align-items-center">
       <Col xs={12} md={5} className="mb-3">
         <Image src="/images.jpeg" className="img-fluid" />

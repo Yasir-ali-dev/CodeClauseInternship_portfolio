@@ -8,7 +8,7 @@ const Services = () => {
       <Row>
         <h1 className="display-6 text-center">SERVICES</h1>
       </Row>
-      <Row className="py-2 py-md-4">
+      <Row className="py-1 py-md-2">
         <Col xs={12} md={6} className="py-2 py-md-0">
           <motion.div
             className="d-flex flex-column py-4 px-3"
@@ -17,8 +17,8 @@ const Services = () => {
               backgroundSize: "100% 100%",
               backgroundRepeat: "no-repeat",
               borderRadius: "1px",
-              boxShadow: "0 5px 7px rgba(0, 0, 0, 0.2)", // Initial shadow
-              transition: "box-shadow 0.3s ease", // Smooth transition for shadow
+              boxShadow: "0 5px 7px rgba(0, 0, 0, 0.2)",
+              transition: "box-shadow 0.3s ease",
             }}
             whileHover={{
               scale: 0.9,

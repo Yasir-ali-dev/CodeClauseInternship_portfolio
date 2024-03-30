@@ -8,7 +8,7 @@ import About from "./components/About";
 import Services from "./components/Services";
 import Projects from "./components/Projects";
 import Footer from "./components/Footer";
-import "./index.css";
+import Techs from "./components/Techs";
 function App() {
   return (
     <div>

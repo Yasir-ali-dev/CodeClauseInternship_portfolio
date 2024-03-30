@@ -15,7 +15,7 @@ const tech = [
 const Skills = () => {
   return (
     <Container>
-      <Row className="py-1">
+      <Row className="py-1" id="skills">
         <Col>
           <hr />
           <div className="d-flex justify-content-center align-items-center flex-wrap gap-3 gap-md-5">
