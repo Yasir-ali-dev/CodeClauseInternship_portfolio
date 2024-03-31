@@ -16,7 +16,11 @@ const About = () => {
     <h3 className="display-6 text-center mb-3 py-1">About Me</h3>
     <Row className="align-items-center">
       <Col xs={12} md={5} className="mb-3">
-        <Image src="/images.jpeg" className="img-fluid" />
+        <Image src="/mine.png" className="img-fluid" rounded 
+        style={{
+          boxShadow:"3px 3px 7px grey"
+        }}
+      />
       </Col>
       <Col>
         <Row className="gap-2 py-2">
@@ -80,10 +84,11 @@ const About = () => {
             Competent IT professional skilled in backend development, web design, and database management. Enthusiastic about creating server-side applications using Node.js and Spring Boot, and curious about exploring machine learning algorithms. Ready to learn, grow, and make valuable contributions.
           </p>
         </Row>
-        
+        <a href="/resume.pdf" download>
           <Button variant="dark" style={{ boxShadow: "3px 3px 6px grey", width:"150px" }}>
             Download CV
           </Button>
+        </a>
       </Col>
     </Row>
   </Container>
